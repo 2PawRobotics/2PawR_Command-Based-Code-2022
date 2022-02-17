@@ -15,14 +15,15 @@ package frc.robot;
 public final class Constants {
 
     public static final int leftCimPort1 = 1;
-    public static final int leftCimPort2 = 2;
-    public static final int rightCimPort1 = 3;
+    public static final int leftCimPort2 = 3;
+    public static final int rightCimPort1 = 2;
     public static final int rightCimPort2 = 4;
 
     public static final int actuatorport = 5;
     public static final int intakelowerport = 6;
-    public static final int intakemidport = 7;
-    public static final int intakehigh = 8;
+    public static final int intakehighport = 7;
+    public static final int leftshooterport = 8;
+    public static final int rightshooterport = 9;
 
     public static final int XContPort = 1;
 

@@ -11,6 +11,7 @@ import frc.robot.commands.ExampleCommand;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandScheduler;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -21,10 +22,10 @@ import edu.wpi.first.wpilibj2.command.Command;
 public class RobotContainer {
 
 // The robot's subsystems and commands are defined here...
-  private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
+ // private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   private final DriveSubsystem driveSubsystem;
 
-  private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem );
+ // private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem );
   private final DriveCommand driveCommand;
 
   public static XboxController XCont;
@@ -35,7 +36,8 @@ public class RobotContainer {
     driveSubsystem = new DriveSubsystem();
     driveCommand = new DriveCommand(driveSubsystem);
     driveCommand.addRequirements(driveSubsystem);
-    driveSubsystem.setDefaultCommand(driveCommand);
+    //driveSubsystem.setDefaultCommand(driveCommand);
+    CommandScheduler.getInstance().setDefaultCommand(driveSubsystem, driveCommand);
 
     XCont = new XboxController(Constants.XContPort);
 
@@ -58,8 +60,8 @@ public class RobotContainer {
    *
    * @return the command to run in autonomous
    */
-  public Command getAutonomousCommand() {
+ // public Command getAutonomousCommand() {
     // An ExampleCommand will run in autonomous
-    return m_autoCommand;
-  }
+    //return m_autoCommand;
+  //}
 }

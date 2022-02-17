@@ -35,7 +35,7 @@ public class DriveSubsystem extends SubsystemBase {
   }
 
   public void ArcadeDrive(XboxController controller, double speedX, double speedY){
-    arcadeDrive.arcadeDrive(RobotContainer.XCont.getY(Hand.kLeft)*speedY, RobotContainer.XCont.getX(Hand.kRight)*speedX);
+    arcadeDrive.arcadeDrive(RobotContainer.XCont.getLeftY()*speedY, RobotContainer.XCont.getRightX()*speedX);
 
   }
 }

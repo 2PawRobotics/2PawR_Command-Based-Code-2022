@@ -26,8 +26,8 @@ public final class Constants {
 
     public static final int XContPort = 1;
 
-    public static final double speedy = 0.83;
-    public static final double speedx = -0.83;
+    public static final double speedY = 0.83;
+    public static final double speedX = -0.83;
 
 
 }

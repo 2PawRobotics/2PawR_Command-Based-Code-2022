@@ -34,8 +34,8 @@ public class DriveSubsystem extends SubsystemBase {
     // This method will be called once per scheduler run
   }
 
-  public void ArcadeDrive(XboxController controller, double speedx, double speedy){
-    arcadeDrive.arcadeDrive(RobotContainer.XCont.getY(Hand.kLeft)*speedy, RobotContainer.XCont.getX(Hand.kRight)*speedx);
+  public void ArcadeDrive(XboxController controller, double speedX, double speedY){
+    arcadeDrive.arcadeDrive(RobotContainer.XCont.getY(Hand.kLeft)*speedY, RobotContainer.XCont.getX(Hand.kRight)*speedX);
 
   }
 }

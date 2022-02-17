@@ -31,7 +31,7 @@ public class DriveCommand extends CommandBase {
   @Override
   public void execute() {
 
-    driveSubsystem.ArcadeDrive(RobotContainer.XCont, Constants.speedx, Constants.speedy);
+    driveSubsystem.ArcadeDrive(RobotContainer.XCont, Constants.speedX, Constants.speedY);
 
   }
 

@@ -24,7 +24,7 @@ public final class Constants {
     public static final int intakemidport = 7;
     public static final int intakehigh = 8;
 
-    public static final int XContPort = 1;
+    public static final int XContPort = 0; //Will and Mr. T are trying to set this to 0. It was 1. It partially fixed the issue.
 
     public static final double speedy = 0.83;
     public static final double speedx = -0.83;
